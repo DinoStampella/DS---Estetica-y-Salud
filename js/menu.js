@@ -9,11 +9,11 @@
 
     function showList() {
         links.classList.add('nav__list--show');
-        exit.classList.add('exit--show');
     }
 
     function hideList() {
-        links.classList.remove('nav__list--show');
-        exit.classList.remove('exit--show');
+        setTimeout(() =>{
+            links.classList.remove('nav__list--show');
+        },500)
     }
 }())

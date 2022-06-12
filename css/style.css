@@ -11,10 +11,30 @@
     --filter-img-color-2: invert(99%) sepia(45%) saturate(831%) hue-rotate(306deg) brightness(109%) contrast(104%);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--font-main);
     background-color: var(--color-2);
     color: var(--color-4);
+}
+
+.arrowUp{
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 1000;
+    background-color: var(--color-2);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.arrowUp__img{
+    width: 40px;
+    height: 40px;
 }
 
 .container{
@@ -31,12 +51,12 @@ body{
     height: 100vh;
     position: relative;
 }
-header::before{
+.header::before{
     content: "";
     position: absolute;
-    background-image: url(../images/masaje1.jpg);
+    background-image: url(../images/DS\ -\ background.jpg);
     background-size: cover;
-    height: 90%;
+    height: 99%;
     width: 100%;
     z-index: -1;
 }
@@ -63,6 +83,7 @@ header::before{
     column-gap: 2rem ;
     row-gap: 1rem;
     padding: 0;
+    position: relative;
 }
 
 .nav__items{
@@ -88,15 +109,16 @@ header::before{
     width: 40px;
     position: absolute;
     right: 7%;
-    top: 50px;
+    top: 40px;
     cursor: pointer;
-    display: none;
 }
 
-.exit--show{
-    display: inline-block;
-    z-index: 3;
+.exit:hover{
+    transform: rotateZ(180deg);
+    transition: transform 1s;
 }
+
+
 
 .logo{
     position: absolute;
@@ -180,7 +202,7 @@ header::before{
 /*PROFESSIONALS*/
 .background{
     background-color: var(--color-1);
-    padding: 50px 0 60px;
+    padding: 0 0 60px;
 }
 
 .title{
@@ -315,7 +337,7 @@ header::before{
 
 .benefits__container{
     margin: 50px auto 0;
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
@@ -488,6 +510,7 @@ header::before{
 
 @media (max-width: 900px){
 
+    
     .nav__list{
         position: absolute;
         top: -100%;
@@ -501,6 +524,7 @@ header::before{
         z-index: 1;
         text-align: center;
         transition: top 1s;
+        
         
     }
 
@@ -538,6 +562,10 @@ header::before{
 
     .about{
         grid-template-columns: 1fr 1.5fr;
+    }
+
+    .background{
+        padding: 0;
     }
 
     .professional{
@@ -584,6 +612,10 @@ header::before{
 
 
 @media (max-width: 700px) {
+
+    .header::before{
+        background-image: url(../images/DS\ -\ background\ @media.jpg);
+    }
 
     .logo{
         margin-left: -120px;

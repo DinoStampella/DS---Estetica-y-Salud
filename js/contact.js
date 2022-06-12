@@ -1,6 +1,6 @@
 (function(){
 
-    const images = ['./images/masaje1.jpg','./images/masaje2.jpg', './images/masaje3.jpg']
+    const images = ['./images/Contact - 1.jpg','./images/Contact - 2.jpg','./images/Contact - 3.jpg','./images/Contact - 4.jpg','./images/Contact - 5.jpg']
 
     const img1 = document.querySelector('.img1')
     const img2 = document.querySelector('.img2')

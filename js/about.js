@@ -15,5 +15,5 @@
         }
         };
     
-    setInterval(slideFunction, 3000)
+    setInterval(slideFunction, 4000)
 }());
