@@ -157,7 +157,7 @@ header::before{
     object-fit: cover;
     object-position: 50% 100%;
     border: solid medium var(--color-3);
-    border-radius: 4px;
+    border-radius: 8px;
     opacity: 0;
     transition: opacity 1s;
 }
