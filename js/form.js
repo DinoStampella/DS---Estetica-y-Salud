@@ -20,9 +20,12 @@
     const close = document.querySelector('.form__close')
 
     function openForm(){
-        form.classList.toggle('form__background--show')
+        form.classList.add('form__background--show')
+    }
+    function closeForm(){
+        form.classList.remove('form__background--show')
     }
     button.addEventListener('click', openForm)
-    close.addEventListener('click', openForm)
+    close.addEventListener('click', closeForm)
     
 }())

@@ -518,7 +518,7 @@ body{
 }
 
 .form__background--show{
-    height: 500px !important;
+    height: 450px !important;
 }
 
 .appointment__form{
@@ -712,9 +712,9 @@ body{
         display: none;
     }
 
-    .form__background--show{
-        height: 550px !important;
-    }
-    /*Continuar acá*/
 
+    .appointment__form{
+        width: 80%;
+    }
+   
 }
