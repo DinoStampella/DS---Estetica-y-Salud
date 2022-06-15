@@ -518,7 +518,7 @@ body{
 }
 
 .form__background--show{
-    height: 450px !important;
+    height: 470px !important;
 }
 
 .appointment__form{
@@ -530,7 +530,7 @@ body{
 
 .form__title{
     font-size: 1.5em;
-    margin: 10px auto;
+    margin: 40px auto 10px;
 }
 
 .form__items{
