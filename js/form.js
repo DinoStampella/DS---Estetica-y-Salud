@@ -11,10 +11,11 @@
         };
     let now = year + '-' + month + '-' + date;
 
-    const dateValue = document.getElementById('date');
+    const dateInput = document.getElementById('date');
+   
+    dateInput.setAttribute('min', now);
     
-    dateValue.setAttribute('min', now);
-    
+ 
     const button = document.querySelector('.contact__button')
     const form = document.querySelector('.form__background')
     const close = document.querySelector('.form__close')

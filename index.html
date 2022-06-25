@@ -193,12 +193,27 @@
                     </div>
                     <div class="form__items">
                         <label for="time">Hora</label>
-                        <input type="time" name="time" id="time" required min="08:00" max="20:00" step="1800">
+                        <input type="time" name="time" id="time" required min="08:00" max="20:00" step="1800" list="timeList">
                     </div>
                     <div class="buttons__container">
                         <input type="submit" value="Solicitar turno" class="buttons">
                         <input type="reset" value="Cerrar" class="buttons form__close">
                     </div>
+
+                    <datalist id="timeList">
+                        <option value="08:00"></option>
+                        <option value="09:00"></option>
+                        <option value="10:00"></option>
+                        <option value="11:00"></option>
+                        <option value="12:00"></option>
+                        <option value="13:00"></option>
+                        <option value="14:00"></option>
+                        <option value="15:00"></option>
+                        <option value="16:00"></option>
+                        <option value="17:00"></option>
+                        <option value="18:00"></option>
+                        <option value="19:00"></option>
+                    </datalist>
                 
             </form>
             <script src="./js/form.js"></script>
@@ -225,9 +240,9 @@
 
             <div class="socialMedia">
                 <div class="socialMedia__icons">
-                    <a href="https://www.facebook.com/dinostampellamasajista"><img src="./images/Social Media - fb.svg" alt="Facebook" class="socialMedia__icon"></a>
-                    <a href="https://wa.me/543465663173?text=Hola Dino, mi nombre es ..."><img src="./images/Social Media - wpp.svg" alt="Whatsapp" class="socialMedia__icon"></a>
-                    <a href="mailto:dino.stampella96@gmail.com"><img src="./images/Social Media - email.svg" alt="Email" class="socialMedia__icon"></a>
+                    <a href="https://www.facebook.com/dinostampellamasajista" target="_blank"><img src="./images/Social Media - fb.svg" alt="Facebook" class="socialMedia__icon"></a>
+                    <a href="https://wa.me/543465663173?text=Hola Dino, mi nombre es ..." target="_blank"><img src="./images/Social Media - wpp.svg" alt="Whatsapp" class="socialMedia__icon"></a>
+                    <a href="mailto:dino.stampella96@gmail.com" target="_blank"><img src="./images/Social Media - email.svg" alt="Email" class="socialMedia__icon"></a>
                 </div>
                 <h3 class="copyRight">Derechos reservados &copy;Dino Stampella</h3>
             </div>
